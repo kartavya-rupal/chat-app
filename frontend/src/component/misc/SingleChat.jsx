@@ -15,7 +15,7 @@ import io from "socket.io-client"
 import Lottie from "react-lottie"
 import animationData from "../../animations/typing.json"
 
-const ENDPOINT = "https://vibetalk-3od0.onrender.com/chats"
+const ENDPOINT = "https://vibetalk-3od0.onrender.com"
 var socket, selectedChatCompare
 const SingleChat = ({ fetchAgain, setFetchAgain }) => {
     const [messages, setMessages] = useState([])
