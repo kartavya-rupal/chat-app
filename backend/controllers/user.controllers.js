@@ -1,8 +1,3 @@
-
-
-
-
-
 import expressAsyncHandler from "express-async-handler";
 import { User } from "../models/user.models.js";
 import generateToken from "../config/generateToken.js";
@@ -39,6 +34,7 @@ const registerUser = expressAsyncHandler(async (req, res) => {
     } else {
         res.status(400)
         throw new Error("Failed to create user")
+        console.log("Failed to create user")
     }
 })
 
